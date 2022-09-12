@@ -1,0 +1,592 @@
+:root {
+    --mioblu: #1717FF;
+    --mioverde: #22CF22;
+    --miorosso: #BB1123;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    color: red;
+    transition: width 2s, height 4s, transform 2s;
+    transition-delay: 0.5s;
+    background-color: #ffffff;
+    height: 100%;
+    width: 50%;
+  }
+  
+  table:hover {
+    color: #fff;
+    background-color: #ddd;
+    height: 300%;
+    width: 100%;
+  }
+  
+  table.gira:hover {
+    transform: rotate(360deg);
+  }
+  
+  td,
+  th {
+    border: 1px solid #0FFFC3;
+    padding: 8px;
+  }
+  
+  p::first-letter {
+    font-size: 1.8em;
+    color: yellow;
+  }
+  
+  p {
+    font-family: cursive;
+    font-size: 14px;
+    color: magenta;
+  }
+  
+  dl {
+    font-family: serif;
+    font-size: 24px;
+    color: blue;
+    background: white;
+    text-align: center;
+    margin-left: 50;
+  }
+  
+  .center {
+    text-align: center;
+    color: red;
+  }
+  
+  a {
+    color: magenta;
+  }
+  
+  a:link {
+    color: red;
+    background-color: rgb (20, 200, 45);
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-family: Brush Script MT, cursive;
+    text-align: left;
+    background: #92A8D1;
+    border: 2px none;
+    margin-right: 0px;
+    margin-left: 10px;
+    text-decoration-color: red;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    padding: 15px;
+  }
+  
+  h1.dashed {
+    border-color: none;
+    border-radius: 4px;
+  }
+  
+  h2 {
+    text-align: left;
+    font-size: 32px;
+    font-family: Brush Script MT, cursive;
+    color: #B30617;
+    background: white;
+    border: 2px none;
+    margin-right: 0px;
+    margin-left: 10px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+  }
+  
+  h2.dotted {
+   
+    border-radius: 6px;
+  }
+  
+  body {
+    background-image: url ("C:\Users\AulaCorsi2\G\basilico.jpg");
+    padding: 25px 50px 75px 10px;
+  }
+  
+  body.outline {
+    outline-style: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  #photo-button {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .bello {
+    margin: 40px;
+    width: 150px;
+    border: 14px solid blue;
+    padding: 10px;
+    color: #6711A3;
+  }
+  
+  dl.margin {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+  }
+  
+  div.sticky {
+    position: sticky;
+    top: 0;
+  }
+  
+  p.overflow {
+    margin-left: 350px;
+    margin-right: 150px;
+    overflow: scroll;
+    width: 150px;
+    height: 150px;
+  }
+  
+  img.block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+  
+  
+  dd.inline {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  div.child > p {
+    background-color: #8910CC;
+  }
+  
+  a.hor {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-cont {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-cont {
+    display: block;
+  }
+  
+  a[target] {
+    background-color: #0CA014;
+    opacity: 0.3;
+  }
+  
+  input[type=text],
+  select {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 50%;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input:hover {
+    box-shadow: 2px 2px 5px blue;
+  }
+  
+  input [type=checkbox] {
+    width: 100%;
+    background-color: #3CAF49;
+    color: black;
+    border-radius: 3px;
+    cursor: crosshair;
+  }
+  
+  .heading {
+    background-color: #000000 !important;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .all {
+    margin-left: 100px;
+  }
+  
+  #back-color {
+    background-color: green;
+    background-image: linear-gradient(green, yellow);
+    height: 100%;
+  }
+  
+  p.vertical {
+    writing-mode: vertical-rl;
+  }
+  
+  input.crazy:hover {
+    transition: 2s;
+    transform: translate(200px, 100px);
+  }
+  
+  .changecolor:hover {
+    animation-name: changecolor;
+    animation-duration: 6s;
+    animation-iteration-count: 100000;
+  }
+  
+  @keyframes changecolor {
+    0% {
+      background-color: purple;
+    }
+  
+    33% {
+      background-color: black;
+    }
+  
+    100% {
+      background-color: purple;
+    }
+  }
+  
+  .changecolor2:hover {
+    animation-name: changecolor;
+    animation-duration: 0.5s;
+    animation-iteration-count: 100000;
+  }
+  
+  @keyframes changecolor2 {
+    0% {
+      background-image: linear-gradient(to right, purple, red);
+    }
+  
+    33% {
+      background-image: linear-gradient(to right, black, white);
+    }
+  
+    100% {
+      background-image: linear-gradient(to right, purple, red);
+    }
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: purple;
+    color: red;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    position: absolute;
+    top: -5px;
+    top: 105%;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .button {
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    color: blue;
+    transition: rotate 6s;
+  
+  }
+  
+  .button:hover {
+    animation-name: Buttonchange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: alternate;
+  }
+  
+  @keyframes Buttonchange {
+    0% {
+      background-color: red;
+      color: blue;
+    }
+  
+    10% {
+      background-color: yellow;
+      color: purple;
+      transform: rotate(45deg);
+    }
+  
+    30% {
+      background-color: green;
+      color: red;
+    }
+  
+    50% {
+      background-color: black;
+      color: white;
+      transform: rotate(90deg);
+    }
+  
+    75% {
+      background-color: white;
+      color: black;
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      background-color: red;
+      color: blue;
+      transform: rotate(360deg);
+    }
+  }
+  
+  .triplecol {
+    column-count: 3;
+    column-rule-style: solid;
+    column-rule-color: var(--mioblu);
+    font-family: cursive, Brush Script MT;
+  }
+  
+  .resizable {
+    border: 2px solid black;
+    margin-left: 25px;
+    overflow: auto;
+    resize: both;
+    font-family: cursive, Brush Script MT;
+    max-width: 100%;
+    min-width: 10%;
+    background-color: rgb(192, 192, 192);
+  }
+  
+  @media screen and (max-width: 780px) {
+    .resizable {
+      background-color: white;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .margin {
+      display: inline-block;
+    }
+  }
+  
+  .flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: red;
+    width: 100%;
+    transition: width 3s;
+  }
+  
+  .flexbox>div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    transition: width 3s;
+  }
+  
+  .flexbox>div:focus {
+    color: red;
+    background-color: pink;
+  }
+  
+  .flexbox>div:hover {
+    width: 250%;
+    z-index: 3;
+  }
+  
+  .flexbox:hover {
+    width: 45%;
+  }
+  
+  .flexbox>div:active {
+    color: blue;
+    background-color: yellow;
+  }
+  
+  @media (max-width: 800px) {
+    .flexbox {
+      flex-direction: column;
+    }
+  
+    .flexbox>div {
+      max-width: 95%;
+    }
+  }
+  
+  #sticky2 {
+    transition: 2s;
+    transform: scale 0.5;
+    transform: translate (200px, 100px);
+    position: sticky;
+    top: 0;
+  }
+  
+  .loader {
+    border: 10px solid white;
+    border-top: 10px solid blue;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .dropmen {
+    color: white;
+    background-color: #12AA6C;
+    border: none;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropmen-content {
+    color: black;
+    background-color: grey;
+    padding: 18px;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    border: 1px;
+    border-radius: 5px;
+  }
+  
+  .dropmen-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    border: 1px hidden;
+  }
+  
+  .dropdown2 .dropmen:hover {
+    background-color: #12008F;
+  }
+  
+  .dropdown2:hover .dropmen-content {
+    display: block;
+  }
+  
+  .dropmen-content a:hover {
+    color: purple;
+  }
+  
+  .sidenavbutton {
+    width: 75px;
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    background-color: #3498DB;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    text-align: center;
+  }
+  
+  .sidenav {
+    width: 75px;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    background-color: #3498DB;
+    color: black;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+    z-index: 3;
+  }
+  
+  .sidenav-content {
+    color: black;
+    display: none;
+  }
+  
+  .sidenav-content:hover {
+    color: purple;
+  }
+  
+  .sidenav:hover .sidenav-content {
+    display: block;
+  }
+  
+  .grid-container {
+    background-color: lightblue;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 5px;
+  }
+  
+  .grid-element {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
