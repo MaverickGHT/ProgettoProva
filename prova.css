@@ -252,8 +252,8 @@
   }
   
   #back-color {
-    background-color: green;
-    background-image: linear-gradient(green, yellow);
+    background-color: red;
+    background-image: linear-gradient(red, yellow);
     height: 100%;
   }
   
